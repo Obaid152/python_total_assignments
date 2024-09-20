@@ -1,0 +1,17 @@
+# Ask the user for their information
+name = input("What is your name? ")
+favorite_color = input("What is your favorite color? ")
+first_pet_name = input("What was your first pet's name? ")
+mothers_maiden_name = input("What is your mother's maiden name? ")
+elementary_school = input("What elementary school did you attend? ")
+
+# Create or open the file hackme.txt in write mode
+with open("hackme.txt", "w") as file:
+    # Write the collected information into the file
+    file.write(f"Name: {name}\n")
+    file.write(f"Favorite Color: {favorite_color}\n")
+    file.write(f"First Pet's Name: {first_pet_name}\n")
+    file.write(f"Mother's Maiden Name: {mothers_maiden_name}\n")
+    file.write(f"Elementary School: {elementary_school}\n")
+
+print("Information has been saved to hackme.txt.")
